@@ -1,2 +1,2 @@
-# CORPORATE-RELATIONS
-SEMESTER PROJECT
+# Job-Link
+ Job Link website, Linking job seekers to employers

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+
+    <meta charset="utf-8">
+    <title>Job link. A UCU class project, December 2021</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/owl.carousel.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.css">
+    <link rel="stylesheet" href="assets/css/animate.min.css">
+    <link rel="stylesheet" href="assets/css/fontawesome-all.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <link rel="stylesheet" type="text/css" href="assets/css/colors/switch.css">
+    <link href="assets/css/colors/color-2.css" rel="alternate stylesheet" type="text/css" title="color-2">
+    <link href="assets/css/colors/color-3.css" rel="alternate stylesheet" type="text/css" title="color-3">
+    <link href="assets/css/colors/color-4.css" rel="alternate stylesheet" type="text/css" title="color-4">
+    <link href="assets/css/colors/color-5.css" rel="alternate stylesheet" type="text/css" title="color-5">
+
+</head>
+
+<body>
+
+    <div class="wizard-inner-box">
+        <div class="inner-title text-center">
+            <h2>What kind of Job You Need ?</h2>
+            <p>What did you train in? and what is your strength?</p>
+        </div>
+
+        <p class="address">Find us in Mukono, </br> Plot 67-173, Mukono Hill, Bishop Tucker Road, P.O. Box 4,</br> Mukono, Uganda Telephone:+256 312 350 800 Email Us: info@ucu.ac.ug </br> Web: www.ucu.ac.ug
+            </br> <a href="index.html" class="link">Back Home</a>
+        </p>
+
+
+        <script src="assets/js/jquery-3.3.1.min.js"></script>
+        <script src="assets/js/bootstrap.min.js"></script>
+        <script src="assets/js/popper.min.js"></script>
+        <script src="assets/js/owl.carousel.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script>
+        <script src="assets/js/form-step.js"></script>
+        <script src="assets/js/jquery.validate.min.js"></script>
+        <script src="assets/js/main.js"></script>
+        <script src="assets/js/switch.js"></script>
+        <script>
+            $("#customFile").change(function() {
+                filename = this.files[0].name
+            });
+            $(".custom-file-input").on("change", function() {
+                var fileName = $(this).val().split("\\").pop();
+                $(this).siblings(".custom-file-label").addClass("selected").html(fileName);
+            });
+            $('.datepicker').datepicker({
+                clearBtn: true,
+                format: "dd/mm/yyyy"
+            });
+        </script>
+</body>
+
+</html>
